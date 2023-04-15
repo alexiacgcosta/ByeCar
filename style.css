@@ -1,0 +1,154 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+nav {
+  background: #303030;
+  display: flex;
+}
+nav h1 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+p {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #265E70;
+}
+
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 3%;
+}
+
+#right img {
+  width: 100%;
+
+  
+}
+
+#card {
+  display: flex;
+  flex-direction: row; 
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+ #card img {
+  width: ;
+ }
+#card-content {
+  background: rgba(77, 188, 233, 0.75);
+border-radius: 15px;
+padding: 3%;
+margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#card-content h2 {
+  font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#card-content h3 {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 2.5rem;
+align-items: center;
+text-align: center;
+margin: 3%;
+color: #FFFFFF;
+}
+
+#card-content p {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+  color: #FFFFFF;
+}
+
+#price{
+  background: #FFFFFF;
+  border-radius: 4rem;
+  text-align: center;
+  align-self: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+#price p {
+  font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 2rem;
+display: flex;
+align-items: center;
+text-align: center;
+color: #265E70;
+justify-content: space-around;
+}
+
+button {
+  font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 39px;
+line-height: 47px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+background: #4DBCE9;
+border-radius: 15px;
+border: none;
+padding: 3% 7%;
+margin-top: 5%;
+}
