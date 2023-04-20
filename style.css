@@ -7,6 +7,7 @@
 nav {
   background: #303030;
   display: flex;
+  height: 4rem;
 }
 nav h1 {
   font-family: 'Raleway';
@@ -27,7 +28,7 @@ main {
   
 }
 
-p {
+h2 {
 font-family: 'Verdana';
 font-style: normal;
 font-weight: 500;
@@ -55,7 +56,7 @@ section {
   
 }
 
-#card {
+.card {
   display: flex;
   flex-direction: row; 
   text-align: center;
@@ -63,20 +64,28 @@ section {
   justify-content: space-around;
   width: 100%;
 }
- #card img {
-  width: ;
- }
-#card-content {
-  background: rgba(77, 188, 233, 0.75);
-border-radius: 15px;
-padding: 3%;
-margin: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+
+.card-contents {
+ display: flex;
 }
 
-#card-content h2 {
+.card-content img {
+  width: 30rem;
+ }
+.card-content {
+  background: rgba(77, 188, 233, 0.75);
+  border-radius: 15px;
+  padding: 3%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50rem;
+
+ 
+}
+
+.card-content h2 {
   font-family: 'Verdana';
 font-style: normal;
 font-weight: 700;
@@ -85,11 +94,12 @@ line-height: 40px;
 display: flex;
 align-items: center;
 text-align: center;
+justify-content: space-around;
 
 color: #FFFFFF;
 }
 
-#card-content h3 {
+.card-content h3 {
 font-family: 'Verdana';
 font-style: normal;
 font-weight: 400;
@@ -100,7 +110,7 @@ margin: 3%;
 color: #FFFFFF;
 }
 
-#card-content p {
+.card-content p {
   font-family: 'Verdana';
   font-style: normal;
   font-weight: 400;
@@ -111,7 +121,11 @@ color: #FFFFFF;
   color: #FFFFFF;
 }
 
-#price{
+.box-price {
+  display: flex;
+  flex-direction: column;
+}
+.price{
   background: #FFFFFF;
   border-radius: 4rem;
   text-align: center;
@@ -123,7 +137,7 @@ color: #FFFFFF;
   padding: 2%;
 }
 
-#price p {
+.price p {
   font-family: 'Verdana';
 font-style: normal;
 font-weight: 700;
@@ -152,3 +166,35 @@ border: none;
 padding: 3% 7%;
 margin-top: 5%;
 }
+
+.card {
+  width: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content {
+  display: flex;
+  transition: transform 0.3s ease-in;
+}
+
+.card-contents {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
