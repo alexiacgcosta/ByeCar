@@ -50,67 +50,69 @@ section {
   margin: 3%;
 }
 
-#right img {
-  width: 100%;
-
-  
+.container img {
+  width: 80%;
 }
+
 
 .card {
   display: flex;
   flex-direction: row; 
-  text-align: center;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
+  width: 40rem;
+  overflow: hidden;
 }
 
-.card-contents {
- display: flex;
-}
-
-.card-content img {
-  width: 30rem;
- }
 .card-content {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  
+}
+
+.slider img {
+  width: 20rem;
+ }
+
+.slider {
   background: rgba(77, 188, 233, 0.75);
   border-radius: 15px;
   padding: 3%;
-  margin: 1%;
-  display: flex;
+  margin: 1rem;
   flex-direction: column;
   justify-content: space-between;
-  height: 50rem;
-
- 
+  height: 40rem;
+  width: 70%;
+  display: flex;
+  transition: transform 0.3s ease-in;
 }
 
-.card-content h2 {
+.slider h2 {
   font-family: 'Verdana';
-font-style: normal;
-font-weight: 700;
-font-size: 33px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-justify-content: space-around;
-
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  color: #FFFFFF;
 }
 
-.card-content h3 {
+.slider h3 {
 font-family: 'Verdana';
 font-style: normal;
 font-weight: 400;
-font-size: 2.5rem;
+font-size: 2rem;
 align-items: center;
 text-align: center;
 margin: 3%;
 color: #FFFFFF;
 }
 
-.card-content p {
+.slider p {
   font-family: 'Verdana';
   font-style: normal;
   font-weight: 400;
@@ -141,7 +143,7 @@ color: #FFFFFF;
   font-family: 'Verdana';
 font-style: normal;
 font-weight: 700;
-font-size: 2rem;
+font-size: 1.2rem;
 display: flex;
 align-items: center;
 text-align: center;
@@ -167,34 +169,9 @@ padding: 3% 7%;
 margin-top: 5%;
 }
 
-.card {
-  width: 30rem;
-  overflow: hidden;
-  position: relative;
-}
 
-.card-content {
-  display: flex;
-  transition: transform 0.3s ease-in;
-}
+.prev-button, .next-button {
+  cursor: pointer;
 
-.card-contents {
-  flex-shrink: 0;
-  width: 100%;
+  
 }
-
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.prev-button {
-  left: 0;
-}
-
-.next-button {
-  right: 0;
-}
-
